@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Joelkb/DQ-the-file-donor.git /DQTheFileDonorBot
+  git clone https://github.com/afluaflu123/Nancy-Bot-V2.git /Nancy-Bot-V2
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /DQTheFileDonorBot
+  git clone $UPSTREAM_REPO /Nancy-Bot-V2
 fi
-cd /DQTheFileDonorBot
+cd /Nancy-Bot-V2
 pip3 install -U -r requirements.txt
-echo "Starting DQ-The-File-Donor...."
+echo "Starting Nancy-Bot-V2 💃...."
 python3 bot.py
